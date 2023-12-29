@@ -1,14 +1,33 @@
-<!DOCTYPE html>
+<! DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyPortfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>My Portfolio</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolorum sit quod praesentium accusamus nisi delectus nemo maxime ad modi!</p>
-    <img src="https://img.freepik.com/free-psd/smiling-worker-with-open-hands_1154-318.jpg?w=826&t=st=1702623681~exp=1702624281~hmac=a6f0db6438dac23932aae2e3febf8bc24bd04918abe65c4245f0c508c09e00e3" alt="photo">
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <button type="button" onclick="add()">Add</button>
+
+    <script>
+      function add() {
+        var firstNumber = parseInt(prompt("Enter first Number"));
+        var secondNumber = parseInt(prompt("Enter second Number"));
+        var result = firstNumber + secondNumber;
+
+        document.write(
+          "The sum of " +
+            firstNumber +
+            " and " +
+            secondNumber +
+            " is: " +
+            result
+        );
+
+        // Alternatively, you can use an alert to display the result
+        // alert("The sum of " + firstNumber + " and " + secondNumber + " is: " + result);
+      }
+    </script>
+  </body>
 </html>
